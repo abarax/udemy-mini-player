@@ -1,0 +1,39 @@
+.buttons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  min-height: 20px;
+  box-sizing: border-box;
+  padding: 6px;
+  padding-top: 4px;
+  padding-bottom: 18px;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out; 
+}
+
+.buttons .button {
+    padding: 8px;
+    float: left;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8; 
+}
+
+.buttons .button:hover {
+  opacity: 1; 
+}
+
+.buttons .button.button-right {
+  float: right; 
+}
+
+.buttons .button.drag {
+  -webkit-app-region: drag; 
+}
+
+body:hover .buttons {
+    opacity: 1; 
+}

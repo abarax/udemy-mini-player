@@ -1,0 +1,24 @@
+<div id="comments">
+  <ul>
+    {{#each lectures}}
+      {{#if embed_url}}
+        {{#if watched}}
+          <li class="green">
+            <div class="lec-a" embed_url="{{embed_url}}">
+              <div>{{object_index}} - {{title}}</div>
+              <div><p><strong>{{content_summary}}</strong></p></div>
+            </div>
+          </li> 
+        {{else}}
+          <li class="orange">
+            <div class="lec-a" embed_url="{{embed_url}}">
+              <div>{{object_index}} - {{title}}</div>
+              <div><p><strong>{{content_summary}}</strong></p></div>
+            </div>
+          </li> 
+        {{/if}}
+      {{/if}}
+    {{/each}}
+    </ul>
+</div>
+
